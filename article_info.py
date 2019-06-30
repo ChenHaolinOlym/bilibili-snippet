@@ -1,3 +1,10 @@
+# issues
+# 1. robust input
+# 2. habdle bad request
+# 3. use user api for further information
+# 4. put all files in one package
+
+
 import urllib.request
 import json
 
