@@ -3,6 +3,8 @@
 # 2. habdle bad request
 # 3. use user api for further information
 # 4. put all data into a dictionary and wraped it with a class
+# 5. put all files in one package
+# 6. combine two requests into one
 
 import urllib.request
 import json
