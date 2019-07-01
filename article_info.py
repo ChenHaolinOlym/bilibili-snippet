@@ -7,11 +7,13 @@
 
 import urllib.request
 import json
+from os import system
 
 class ArticleInfo:
     article_url = 'https://api.bilibili.com/x/article/viewinfo?id={}'
     def __init__(self, cid):
         dict = request(self.article_url, cid)
+        self.dict = dict
         self.cv = cid
         self.outer_like = dict['like']
         self.outer_attention = dict['attention']
@@ -52,3 +54,4 @@ print(a.cv)
 
 
 
+system("pause")

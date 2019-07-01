@@ -8,6 +8,7 @@
 
 import urllib.request
 import json
+from os import system
 
 def getVideoInput():
     aid = input("请输入视频av号：")
@@ -118,3 +119,4 @@ def tagInfoRequest(aid):
         print("  标签封面2："+str(dict[i]['head_cover']))
 
 getVideoInput()
+system("pause")
