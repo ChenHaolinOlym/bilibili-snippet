@@ -5,6 +5,9 @@ from datetime import datetime
 import csv
 from time import sleep
 
+sleep_time = 100
+
+
 def requestData(aid):
     url = 'https://api.bilibili.com/x/web-interface/view?aid={}'.format(aid)
     header={'User-Agent':'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
@@ -35,7 +38,7 @@ while True:
     savetoCSV(requestData(aid), aid)
     count += 1
     print(count)
-    sleep(100)
+    sleep(sleep_time)
 
 
 
